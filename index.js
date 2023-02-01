@@ -16,6 +16,7 @@ const server = http.createServer((req, res) => {
     res.write(`<li><strong>req.method</strong>:${req.method}</li>`);
     res.write(`<li><strong>req.path</strong>:${req.path}</li>`);
     res.write(`<li><strong>req.host</strong>:${req.host}</li>`);
+    res.write(`<li><strong>req.url</strong>:${req.url}</li>`);
     res.write('</ul>');
     res.write("<p>I dont know why its undefined... Will try to figure it out...</p>")
     res.write('</body>');
